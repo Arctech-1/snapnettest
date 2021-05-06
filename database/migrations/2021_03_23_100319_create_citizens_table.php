@@ -20,7 +20,7 @@ class CreateCitizensTable extends Migration
             $table->string('name');
             $table->enum('gender', ['Male', 'Female']);
             $table->text('address');
-            $table->string('phone', 11)->unique();
+            $table->string('phone', 20)->unique();
             $table->foreignId('ward_id')
                 ->nullable()->constrained('wards')
                 ->onUpdate('cascade')

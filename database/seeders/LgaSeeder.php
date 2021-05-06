@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Lga;
 use Illuminate\Database\Seeder;
 
 class LgaSeeder extends Seeder
@@ -13,6 +14,6 @@ class LgaSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Lga::factory()->hasWards(5)->create();
     }
 }

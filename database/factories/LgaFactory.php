@@ -21,6 +21,8 @@ class LgaFactory extends Factory
      */
     public function definition()
     {
-        return [];
+        return [
+            'name' => $this->faker->region(),
+        ];
     }
 }

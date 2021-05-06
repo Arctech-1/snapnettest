@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\State;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
-class StateSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class StateSeeder extends Seeder
      */
     public function run()
     {
-        State::factory()->hasLgas(5)->create();
+        User::factory()->create();
     }
 }

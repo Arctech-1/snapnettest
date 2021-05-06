@@ -21,8 +21,12 @@ class CitizenFactory extends Factory
      */
     public function definition()
     {
+        $gender = $this->faker->randomElement(['male', 'female']);
         return [
-            //
+            'name' => $this->faker->name($gender),
+            'gender' => $gender,
+            'address' => $this->faker->streetAddress,
+            'phone' => $this->faker->PhoneNumber,
         ];
     }
 }

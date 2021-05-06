@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Ward;
 use Illuminate\Database\Seeder;
 
 class WardSeeder extends Seeder
@@ -13,6 +14,6 @@ class WardSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Ward::factory()->hasCitizens(10)->create();
     }
 }

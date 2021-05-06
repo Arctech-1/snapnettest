@@ -41,7 +41,7 @@ class CitizenController extends Controller
             'name' => 'required|max:225',
             'gender' => 'required',
             'address' => 'required',
-            'phone' => 'required|max:11',
+            'phone' => 'required|max:11|min:11',
             'ward' => 'required',
         ]);
 

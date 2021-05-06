@@ -31,7 +31,7 @@
         Name *
       </label>
       <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3"
-        name="name" id="name" type="text" placeholder="Jane">
+        name="name" id="name" type="text" placeholder="Jane" value="{{old('name')}}">
       <p class="text-red text-xs italic"></p>
     </div>
     <div class="md:w-1/2 px-3">
@@ -39,7 +39,7 @@
         address *
       </label>
       <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
-          name="address"  id="address" type="text" placeholder="115, lekki phase1">
+          name="address"  id="address" type="text" placeholder="115, lekki phase1" value=" {{old('address')}} ">
     </div>
   </div>
 
